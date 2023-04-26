@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8e6e7fe5fd9d19060838a2fee2857ca4",
+    "content-hash": "982079fdc7047b85dfe5a97792298b3e",
     "packages": [
         {
             "name": "brick/math",
@@ -364,6 +364,55 @@
                 }
             ],
             "time": "2022-09-10T18:51:20+00:00"
+        },
+        {
+            "name": "egolive/aperturly",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/egolive/aperturly.git",
+                "reference": "49347014ac68de48e337f759b91ec22136145e0a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/egolive/aperturly/zipball/49347014ac68de48e337f759b91ec22136145e0a",
+                "reference": "49347014ac68de48e337f759b91ec22136145e0a",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^10.0",
+                "php": "^8.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Egolive\\Aperturly\\Providers\\AperturlyServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Egolive\\Aperturly\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Ehrenhofer",
+                    "email": "info@danielehrenhofer.de"
+                }
+            ],
+            "description": "A sleek, user-friendly photography CMS designed to effortlessly manage, upload, and display images for photographers and creative professionals.",
+            "support": {
+                "issues": "https://github.com/egolive/aperturly/issues",
+                "source": "https://github.com/egolive/aperturly/tree/main"
+            },
+            "time": "2023-04-26T21:20:51+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -7824,7 +7873,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "egolive/aperturly": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
